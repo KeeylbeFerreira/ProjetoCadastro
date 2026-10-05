@@ -62,6 +62,13 @@ public class Main extends Application {
         Button listar = new Button();
         listar.setText("📋\nListar\nfuncionários");
         listar.getStyleClass().add("card");
+        listar.setOnAction(event -> {
+
+            ListagemView listagemView = new ListagemView(funcionarios);
+
+            listagemView.abrir();
+
+        });
 
         Button buscar = new Button();
         buscar.setText("🔍\nBuscar\nfuncionário");
