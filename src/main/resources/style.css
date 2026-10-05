@@ -1,0 +1,184 @@
+/* ==============================
+   TELA PRINCIPAL
+   ============================== */
+
+.principal {
+    -fx-background-color: #F8FAFC;
+}
+
+
+/* ==============================
+   CABEÇALHO
+   ============================== */
+
+.cabecalho {
+    -fx-background-color: white;
+    -fx-padding: 25px 40px;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.titulo {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E293B;
+}
+
+.subtitulo {
+    -fx-font-size: 14px;
+    -fx-text-fill: #64748B;
+}
+
+.status {
+    -fx-font-size: 14px;
+    -fx-text-fill: #16A34A;
+}
+
+
+/* ==============================
+   CONTEÚDO
+   ============================== */
+
+.conteudo {
+    -fx-padding: 45px;
+}
+
+.ola {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E293B;
+}
+
+.mensagem {
+    -fx-font-size: 16px;
+    -fx-text-fill: #64748B;
+}
+
+
+/* ==============================
+   CARDS
+   ============================== */
+
+.card {
+    -fx-background-color: white;
+
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+
+    -fx-pref-width: 280px;
+    -fx-pref-height: 120px;
+
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #1E293B;
+
+    -fx-cursor: hand;
+}
+
+.card:hover {
+    -fx-background-color: #EFF6FF;
+    -fx-border-color: #2563EB;
+
+    -fx-translate-y: -3px;
+}
+
+
+/* ==============================
+   BOTÃO EXCLUIR
+   ============================== */
+
+.card-excluir {
+    -fx-background-color: white;
+
+    -fx-border-color: #FECACA;
+    -fx-border-width: 1px;
+
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+
+    -fx-pref-width: 280px;
+    -fx-pref-height: 90px;
+
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #DC2626;
+
+    -fx-cursor: hand;
+}
+
+.card-excluir:hover {
+    -fx-background-color: #FEF2F2;
+    -fx-border-color: #DC2626;
+
+    -fx-translate-y: -3px;
+}
+
+
+/* ==============================
+   FORMULÁRIO
+   ============================== */
+
+.formulario {
+    -fx-background-color: #F8FAFC;
+    -fx-padding: 35px;
+}
+
+.titulo-formulario {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E293B;
+}
+
+.subtitulo-formulario {
+    -fx-font-size: 14px;
+    -fx-text-fill: #64748B;
+}
+
+.formulario .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #334155;
+}
+
+.formulario .text-field {
+    -fx-pref-width: 380px;
+    -fx-pref-height: 42px;
+
+    -fx-background-color: white;
+
+    -fx-border-color: #CBD5E1;
+    -fx-border-width: 1px;
+
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+
+    -fx-font-size: 14px;
+}
+
+.formulario .text-field:focused {
+    -fx-border-color: #2563EB;
+}
+
+.botao-cadastrar {
+    -fx-background-color: #2563EB;
+    -fx-text-fill: white;
+
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+
+    -fx-pref-width: 380px;
+    -fx-pref-height: 45px;
+
+    -fx-background-radius: 8px;
+
+    -fx-cursor: hand;
+}
+
+.botao-cadastrar:hover {
+    -fx-background-color: #1D4ED8;
+}
