@@ -160,9 +160,6 @@
     -fx-font-size: 14px;
 }
 
-.formulario .text-field:focused {
-    -fx-border-color: #2563EB;
-}
 
 .botao-cadastrar {
     -fx-background-color: #2563EB;
@@ -226,14 +223,6 @@
     -fx-background-color: #EFF6FF;
 }
 
-.table-view .table-row-cell:selected {
-    -fx-background-color: #DBEAFE;
-}
-
-.table-view .table-row-cell:selected .text {
-    -fx-fill: #0F172A;
-}
-
 /* Texto das células */
 
 .table-view .table-cell {
@@ -261,4 +250,42 @@
 
 .table-view .scroll-bar:vertical .thumb:hover {
     -fx-background-color: #64748B;
+}
+/* =========================================
+   BUSCA DE FUNCIONÁRIO
+   ========================================= */
+
+.label-formulario {
+    -fx-text-fill: #0F172A;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.resultado-box {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+    -fx-padding: 18;
+    -fx-min-width: 420px;
+}
+
+.resultado-sucesso {
+    -fx-border-color: #2563EB;
+}
+
+.resultado-erro {
+    -fx-border-color: #DC2626;
+}
+
+.resultado-titulo {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2563EB;
+}
+
+.resultado {
+    -fx-font-size: 14px;
+    -fx-text-fill: #0F172A;
+    -fx-line-spacing: 5px;
 }

@@ -73,6 +73,10 @@ public class Main extends Application {
         Button buscar = new Button();
         buscar.setText("🔍\nBuscar\nfuncionário");
         buscar.getStyleClass().add("card");
+        buscar.setOnAction(event -> {
+            BuscaView buscaView = new BuscaView(funcionarios);
+            buscaView.abrir();
+        });
 
         Button alterar = new Button();
         alterar.setText("✏\nAlterar\ncadastro");
