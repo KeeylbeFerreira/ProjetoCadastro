@@ -20,23 +20,39 @@ public class Main extends Application {
 
         // ===== CABEÇALHO =====
 
+        Label icone = new Label("👥");
+        icone.getStyleClass().add("icone-cabecalho");
+
         Label titulo = new Label("SISTEMA DE FUNCIONÁRIOS");
         titulo.getStyleClass().add("titulo");
 
-        Label subtitulo = new Label("Gerenciamento de funcionários");
+        Label subtitulo = new Label(
+                "Gerenciamento de funcionários"
+        );
         subtitulo.getStyleClass().add("subtitulo");
 
-        VBox textosCabecalho = new VBox(4);
+        VBox textosCabecalho = new VBox(3);
+
         textosCabecalho.getChildren().add(titulo);
         textosCabecalho.getChildren().add(subtitulo);
+
+        HBox identidade = new HBox(12);
+
+        identidade.setAlignment(Pos.CENTER_LEFT);
+
+        identidade.getChildren().add(icone);
+        identidade.getChildren().add(textosCabecalho);
 
         Label status = new Label("● Online");
         status.getStyleClass().add("status");
 
         HBox cabecalho = new HBox();
+
         cabecalho.setAlignment(Pos.CENTER_LEFT);
-        cabecalho.getChildren().add(textosCabecalho);
+
+        cabecalho.getChildren().add(identidade);
         cabecalho.getChildren().add(status);
+
         cabecalho.getStyleClass().add("cabecalho");
 
 
@@ -81,11 +97,21 @@ public class Main extends Application {
         Button alterar = new Button();
         alterar.setText("✏\nAlterar\ncadastro");
         alterar.getStyleClass().add("card");
+        alterar.setOnAction(event -> {
+            AlterarView alterarView = new AlterarView(funcionarios);
+            alterarView.abrir();
+        });
 
         Button excluir = new Button();
         excluir.setText("🗑\nExcluir\nfuncionário");
         excluir.getStyleClass().add("card-excluir");
+        excluir.setOnAction(event -> {
 
+            ExcluirView excluirView =
+                    new ExcluirView(funcionarios);
+
+            excluirView.abrir();
+        });
 
         // ===== BOTÃO CADASTRAR =====
 
@@ -102,7 +128,7 @@ public class Main extends Application {
 
         GridPane cards = new GridPane();
 
-        cards.setHgap(20);
+        cards.setHgap(25);
         cards.setVgap(20);
         cards.setAlignment(Pos.CENTER);
 
@@ -115,11 +141,12 @@ public class Main extends Application {
         cards.add(excluir, 0, 2);
 
         GridPane.setColumnSpan(excluir, 2);
+        GridPane.setHalignment(excluir, javafx.geometry.HPos.CENTER);
 
 
         // ===== CONTEÚDO PRINCIPAL =====
 
-        VBox conteudo = new VBox(25);
+        VBox conteudo = new VBox(30);
 
         conteudo.getChildren().add(boasVindas);
         conteudo.getChildren().add(cards);

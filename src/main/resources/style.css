@@ -289,3 +289,85 @@
     -fx-text-fill: #0F172A;
     -fx-line-spacing: 5px;
 }
+/* =========================================
+   EXCLUSÃO DE FUNCIONÁRIO
+   ========================================= */
+
+.botao-excluir {
+    -fx-background-color: #DC2626;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.botao-excluir:hover {
+    -fx-background-color: #B91C1C;
+}
+/* =========================================
+   ALTERAÇÃO DE FUNCIONÁRIO
+   ========================================= */
+
+.secao-formulario {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12;
+    -fx-border-color: #E2E8F0;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+    -fx-padding: 18;
+    -fx-min-width: 400px;
+}
+
+.mensagem-sucesso {
+    -fx-text-fill: #2563EB;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.mensagem-erro {
+    -fx-text-fill: #DC2626;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+/* =========================================
+   CABEÇALHO PRINCIPAL
+   ========================================= */
+
+.cabecalho {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 22px 35px;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.icone-cabecalho {
+    -fx-background-color: #2563EB;
+    -fx-background-radius: 12;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 22px;
+    -fx-padding: 12px;
+}
+
+.titulo {
+    -fx-text-fill: #0F172A;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo {
+    -fx-text-fill: #64748B;
+    -fx-font-size: 13px;
+}
+
+.status {
+    -fx-background-color: #EFF6FF;
+    -fx-text-fill: #2563EB;
+    -fx-background-radius: 20px;
+    -fx-padding: 7px 13px;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-margin: 0 0 0 20;
+}
